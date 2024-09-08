@@ -1,4 +1,11 @@
-<a href="/">INICIO</a><br/>
-<a href="/proyectos">proyectos</a><br/>
-<a href="/sobremi">sobre mi</a><br/>
-<a href="/contacto">contacto</a><br/>
+<div class="header">
+  <div class="logo">
+    <img ngSrc="logos/logo_pldev.svg" alt="Logo PLDEV">
+  </div>
+  <div class="header-items">
+    <div class="header-item"><a [routerLink]="['/']" [class.active]="isRouteActive('/')">Inicio</a></div>
+    <div class="header-item"><a [routerLink]="['/proyectos']" [class.active]="isRouteActive('/proyectos')">Proyectos</a></div>
+    <div class="header-item"><a [routerLink]="['/sobremi']" [class.active]="isRouteActive('/sobremi')">Sobre Mi</a></div>
+    <div class="header-item"><a [routerLink]="['/contacto']" [class.active]="isRouteActive('/contacto')">Contacto</a></div>
+  </div>
+</div>

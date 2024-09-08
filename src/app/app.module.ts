@@ -7,6 +7,7 @@ import {ProyectosPageComponent} from "./Paginas/ProyectosPage/ProyectosPage.comp
 import {SobreMiPageComponent} from "./Paginas/SobreMiPage/SobreMiPage.component";
 import {ContactoComponent} from "./Paginas/Contacto/Contacto.component";
 import {HeaderComponent} from "./Componentes/Header/Header.component";
+import {FooterComponent} from "./Componentes/Footer/Footer.component";
 
 const routes: Routes = [
   { path: '', component: InicioPageComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     InicioPageComponent,
     HeaderComponent,
+    FooterComponent,
     // Importa RouterModule aquí
   ],
   providers: [],
