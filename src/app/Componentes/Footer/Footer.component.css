@@ -1,8 +1,19 @@
 .footer{
+  text-align: center;
+  letter-spacing: 5px;
+}
+.footer > small{
+  font-size: 20px;
+  color: #5f3711;
+  font-family: Consolas;
+  margin: 20px;
+  display: block;
+  font-weight: lighter;
+}
+.footer-items{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: #5f3711 5px solid;
 }
 .footer-item{
   margin-left: 60px;

@@ -11,6 +11,7 @@ import {FooterComponent} from "./Componentes/Footer/Footer.component";
 
 const routes: Routes = [
   { path: '', component: InicioPageComponent },
+  { path: 'inicio', component: InicioPageComponent},
   { path: 'proyectos', component: ProyectosPageComponent},
   { path: 'sobremi', component: SobreMiPageComponent},
   { path: 'contacto', component: ContactoComponent},
