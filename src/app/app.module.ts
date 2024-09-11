@@ -8,9 +8,10 @@ import {SobreMiPageComponent} from "./Paginas/SobreMiPage/SobreMiPage.component"
 import {ContactoComponent} from "./Paginas/Contacto/Contacto.component";
 import {HeaderComponent} from "./Componentes/Header/Header.component";
 import {FooterComponent} from "./Componentes/Footer/Footer.component";
+import {MainPageComponent} from "./Paginas/MainPage/MainPage.component";
 
 const routes: Routes = [
-  { path: '', component: InicioPageComponent },
+  { path: '', component: MainPageComponent },
   { path: 'inicio', component: InicioPageComponent},
   { path: 'proyectos', component: ProyectosPageComponent},
   { path: 'sobremi', component: SobreMiPageComponent},

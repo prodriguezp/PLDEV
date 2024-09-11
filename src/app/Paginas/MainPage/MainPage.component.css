@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+
+
+.main{
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main>*{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.main > .logos{
+  display: flex;
+  justify-content: space-around;
+}
+.main h1 {
+  margin-bottom: 100px;
+  font-family: "M PLUS 1 Code", monospace;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  text-shadow: #ccb494 5px 5px 5px ;
+}
+
+.logo{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadein 3s;
+}
+.logos .info-tecnologia{
+  text-align: center;
+  margin: 40px;
+  font-family: "Allura", cursive;
+  padding: 5px;
+  background-color: #ccb494;
+  font-weight: lighter;
+  font-size: 20px;
+  display: block;
+  width: 350px;
+  animation: fadein 3s;
+
+}
+
+.logos .info-tecnologia:nth-child(2n){
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: #ccb494 5px 0px 5px ;
+
+}
+.logos .info-tecnologia:nth-child(2n+1){
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: #ccb494 -5px 0px 5px ;
+
+}
+
+
+img {
+  width: 70px;
+  filter:drop-shadow(5px 5px 10px #5f3711);
+}
+
+
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
