@@ -24,7 +24,7 @@
   margin-bottom: 100px;
   font-family: "M PLUS 1 Code", monospace;
   font-size: 70px;
-  font-weight: bold;
+  font-weight: lighter;
   text-align: center;
   width: 100%;
   text-shadow: #ccb494 5px 5px 5px ;
@@ -42,7 +42,7 @@
   margin: 40px;
   font-family: "Allura", cursive;
   padding: 5px;
-  background-color: #ccb494;
+  //background-color: #ccb494;
   font-weight: lighter;
   font-size: 20px;
   display: block;
@@ -54,13 +54,13 @@
 .logos .info-tecnologia:nth-child(2n){
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  box-shadow: #ccb494 5px 0px 5px ;
+  box-shadow: #ccb494 10px 0px 5px ;
 
 }
 .logos .info-tecnologia:nth-child(2n+1){
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
-  box-shadow: #ccb494 -5px 0px 5px ;
+  box-shadow: #ccb494 -10px 0px 5px ;
 
 }
 

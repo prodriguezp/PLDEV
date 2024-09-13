@@ -9,6 +9,8 @@ import {ContactoComponent} from "./Paginas/Contacto/Contacto.component";
 import {HeaderComponent} from "./Componentes/Header/Header.component";
 import {FooterComponent} from "./Componentes/Footer/Footer.component";
 import {MainPageComponent} from "./Paginas/MainPage/MainPage.component";
+import { ProyectoCardComponent } from './Componentes/proyecto-card/proyecto-card.component';
+import {HttpClientModule} from "@angular/common/http";
 
 const routes: Routes = [
   { path: '', component: MainPageComponent },
@@ -21,7 +23,8 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent// Asegúrate de incluir aquí el componente
+    AppComponent,
+    ProyectoCardComponent// Asegúrate de incluir aquí el componente
   ],
   imports: [
     BrowserModule,
@@ -29,9 +32,10 @@ const routes: Routes = [
     InicioPageComponent,
     HeaderComponent,
     FooterComponent,
-    // Importa RouterModule aquí
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,7 +5,7 @@
 .footer > small{
   font-size: 20px;
   color: #5f3711;
-  font-family: Consolas;
+  font-family: Consolas, serif;
   margin: 20px;
   display: block;
   font-weight: lighter;

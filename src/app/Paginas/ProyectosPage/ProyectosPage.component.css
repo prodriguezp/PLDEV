@@ -1,3 +1,18 @@
-div{
-  height: 1000px;
+h1{
+  text-align: center;
+}
+
+.proyectos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.proyectos>div{
+  width: 25%;
+  border: #5f3711 5px solid;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 600px;
 }

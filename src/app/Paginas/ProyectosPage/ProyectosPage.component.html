@@ -1,1 +1,10 @@
-<div></div>
+
+<h1>PROYECTOS</h1>
+
+<div class="proyectos">
+  <div *ngFor="let proyecto of proyectos" >
+    <h3>{{proyecto.titulo}} <span>{{getEmoji(proyecto.estado)}}</span></h3>
+    <img [src]="proyecto.img" width="100%" />
+    <p>{{proyecto.descripcion}}</p>
+  </div>
+</div>
