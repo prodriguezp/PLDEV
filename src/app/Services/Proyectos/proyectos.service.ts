@@ -18,4 +18,7 @@ export class ProyectosService {
     return this.http.get<ProyectoModel[]>(this.urlBase+'/proyectos/all');
   }
 
+  getAllProjectsByName(name: String) : Observable<ProyectoModel[]>{
+    return this.http.get<ProyectoModel[]>(this.urlBase+'/proyectos/byName?name='+name);
+  }
 }

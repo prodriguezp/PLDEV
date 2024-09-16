@@ -1,10 +1,19 @@
-
-<h1>PROYECTOS</h1>
-
-<div class="proyectos">
-  <div *ngFor="let proyecto of proyectos" >
-    <h3>{{proyecto.titulo}} <span>{{getEmoji(proyecto.estado)}}</span></h3>
-    <img [src]="proyecto.img" width="100%" />
-    <p>{{proyecto.descripcion}}</p>
+<div class="parent-proyectos">
+  <h1>PROYECTOS</h1>
+  <input class="inputBusqueda" type="text" (input)="buscarProyectos($event)" />
+  <div class="proyectos" *ngIf="proyectos.length != 0">
+    <div *ngFor="let proyecto of proyectos" class="proyecto">
+      <div class="proyecto-loader">
+        CARGANDO...
+      </div>
+      <div class="proyecto-info">
+        <h3>{{proyecto.titulo}} <span>{{getEmoji(proyecto.estado)}}</span></h3>
+        <img [src]="proyecto.img" width="100%" />
+        <p>{{proyecto.descripcion}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="noProjects" *ngIf="proyectos.length == 0">
+    <h2 >No hay proyectos 🥱</h2>
   </div>
 </div>
