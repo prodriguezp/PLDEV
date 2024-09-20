@@ -8,12 +8,11 @@ import {SobreMiPageComponent} from "./Paginas/SobreMiPage/SobreMiPage.component"
 import {ContactoComponent} from "./Paginas/Contacto/Contacto.component";
 import {HeaderComponent} from "./Componentes/Header/Header.component";
 import {FooterComponent} from "./Componentes/Footer/Footer.component";
-import {MainPageComponent} from "./Paginas/MainPage/MainPage.component";
 import { ProyectoCardComponent } from './Componentes/proyecto-card/proyecto-card.component';
 import {HttpClientModule} from "@angular/common/http";
 
 const routes: Routes = [
-  { path: '', component: MainPageComponent },
+  { path: '', component: InicioPageComponent },
   { path: 'inicio', component: InicioPageComponent},
   { path: 'proyectos', component: ProyectosPageComponent},
   { path: 'sobremi', component: SobreMiPageComponent},
