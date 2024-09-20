@@ -3,86 +3,41 @@
 
 <!-- Header -->
 <div class="header">
-  <h1 class="title">Desarrollador Fullstack con enfoque en Angular y Spring Boot</h1>
-  <p class="subtitle">4 años de experiencia en desarrollo web y backend escalable</p>
+  <h1 class="title">{{ datosInicio!.home.header.title }}</h1>
+  <p class="subtitle">{{ datosInicio!.home.header.subtitle }}</p>
 </div>
 
 <!-- Introducción -->
 <div class="introduction">
-  <p>Soy un desarrollador Fullstack con 4 años de experiencia en el uso de tecnologías como Angular y el ecosistema de Spring para crear soluciones web escalables. Mi enfoque principal es en el backend con Java, incluyendo Spring Boot, JPA, Spring Security y Spring Data, aunque también tengo experiencia en el desarrollo frontend con Angular. Me especializo en la creación de aplicaciones full stack robustas, priorizando la eficiencia y la escalabilidad.</p>
+  <p>{{ datosInicio!.home.introduction.paragraph }}</p>
 </div>
 
 <!-- Call-to-Action -->
 <div class="cta">
-  <a href="/proyectos" class="cta-btn">Ver mis Proyectos</a>
-  <a href="/contacto" class="cta-btn">Contáctame</a>
+  <a *ngFor="let cta of datosInicio!.home.cta " [href]="cta.url" class="cta-btn">{{ cta.text }}</a>
 </div>
 
 <!-- Habilidades Destacadas -->
 <div class="skills">
-  <h2>Habilidades Destacadas</h2>
+  <h2>{{ datosInicio!.home.skills.title }}</h2>
   <div class="skills-grid">
-    <div class="skill-card">
-      <i class="fa fa-database"></i>
-      <p>SQL</p>
-    </div>
-    <div class="skill-card">
-      <i class="fa fa-server"></i>
-      <p>Back-end con Java</p>
-    </div>
-    <div class="skill-card">
-      <i class="fa fa-code"></i>
-      <p>Front-end con Angular</p>
-    </div>
-    <div class="skill-card">
-      <i class="fa fa-network-wired"></i>
-      <p>Desarrollo Fullstack</p>
-    </div>
-    <div class="skill-card">
-      <i class="fa fa-cloud"></i>
-      <p>API REST</p>
-    </div>
-    <div class="skill-card">
-      <i class="fa fa-lock"></i>
-      <p>Spring Security</p>
+    <div *ngFor="let skill of datosInicio!.home.skills.list " class="skill-card">
+      <i [className]="skill.class"></i>
+      <p>{{ skill.text }}</p>
     </div>
   </div>
 </div>
 
 <!-- Proyectos Destacados -->
 <div class="projects">
-  <h2>Proyectos Destacados</h2>
+  <h2>{{ datosInicio!.home.projects.title}}</h2>
   <div class="projects-list">
-    <div class="project-card">
-      <h3>Proyecto 1</h3>
-      <p>Aplicación para restaurante con gestión de pedidos y carta en tiempo real usando Angular y Spring Boot.</p>
+    <div *ngFor="let project of datosInicio!.home.projects.list" class="project-card">
+      <h3>{{ project.name }}</h3>
+      <p>{{ project.description}}</p>
       <div class="tech-icons">
-        <span>Angular</span>
-        <span>Spring Boot</span>
-        <span>REST API</span>
-        <span>SQL</span>
-      </div>
-    </div>
-    <div class="project-card">
-      <h3>Proyecto 2</h3>
-      <p>Desarrollo de sistema de gestión de inventarios para pequeñas empresas, integrando backend en Java y frontend en Angular.</p>
-      <div class="tech-icons">
-        <span>Java</span>
-        <span>Angular</span>
-        <span>Spring Data</span>
-        <span>MySQL</span>
-      </div>
-    </div>
-    <div class="project-card">
-      <h3>Proyecto 3</h3>
-      <p>Sistema de autenticación y autorización con Spring Security, implementado para una aplicación SaaS.</p>
-      <div class="tech-icons">
-        <span>Spring Security</span>
-        <span>Java</span>
-        <span>REST API</span>
+        <span *ngFor="let tech of project.technologies">{{ tech }}</span>
       </div>
     </div>
   </div>
 </div>
-
-
