@@ -64,8 +64,9 @@ a {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
@@ -117,7 +118,7 @@ a {
   margin: 10px;
   width: 300px;
   border-radius: 10px;
-  text-align: left;
+  text-align: center;
   transition: transform 0.3s ease;
   animation: fadeInUp 1.3s ease-in-out;
 }
@@ -130,6 +131,7 @@ a {
 
 .tech-icons {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
 }
