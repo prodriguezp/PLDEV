@@ -7,9 +7,7 @@
 
 
   <div class="busqueda">
-    <button class="cta-btn" (click)="mostrarEsconderBusqueda()">Buscar 🔍</button>
-    <input class="inputBusqueda" type="text" (input)="buscarProyectos($event)"
-           [className]="! mostrarBusqueda ? 'oculto' : 'inputBusqueda'" placeholder="Escribe aqui..."/>
+    <input type="text" [class]="mostrarBusqueda ? 'cta-btn on ' : 'cta-btn off'" [value]="mostrarBusqueda ? '' : 'Buscar 🔍'" (focusin)="mostrarEsconderBusqueda(true)" (focusout)="mostrarEsconderBusqueda(false); buscarProyectos($event)" (input)="buscarProyectos($event)"/>
 
   </div>
   <div class="proyectos" *ngIf="proyectos.length != 0">

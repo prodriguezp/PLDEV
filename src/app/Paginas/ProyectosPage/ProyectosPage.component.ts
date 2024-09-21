@@ -45,13 +45,24 @@ export class ProyectosPageComponent {
 
   buscarProyectos(event: Event) {
     const inputElement = event.target as HTMLInputElement;
-    this._proyectosService.getAllProjectsByName(inputElement.value).subscribe(
-      proyectos => this.proyectos = proyectos
+    this._proyectosService.getAllProjectsByName(this.mostrarBusqueda ? inputElement.value : '').subscribe(
+      proyectos => {
+        console.log("Lista Original: "+JSON.stringify(this.proyectos));
+        console.log("Lista API: "+JSON.stringify(this.proyectos));
+        console.log("Son iguales?: "+this.arraysAreEqual(proyectos,this.proyectos));
+        if(!this.arraysAreEqual(proyectos, this.proyectos)) {
+          this.proyectos = proyectos;
+        }
+      }
     );
     console.log("Entra en buscarProyectos");
   }
 
-  mostrarEsconderBusqueda(){
-    this.mostrarBusqueda =!this.mostrarBusqueda;
+  mostrarEsconderBusqueda(estado: boolean){
+    this.mostrarBusqueda = estado;
+  }
+
+  private arraysAreEqual(arr1: any[], arr2: any[]): boolean {
+    return JSON.stringify(arr1) === JSON.stringify(arr2);
   }
 }
