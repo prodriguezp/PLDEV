@@ -17,6 +17,7 @@ import {FormsModule} from "@angular/forms";
 })
 export class ProyectosPageComponent {
   protected proyectos: ProyectoModel[] = [];
+  protected mostrarBusqueda = false;
 
   constructor(private _proyectosService: ProyectosService ) {
     console.log("Entreamos en el constructor")
@@ -48,5 +49,9 @@ export class ProyectosPageComponent {
       proyectos => this.proyectos = proyectos
     );
     console.log("Entra en buscarProyectos");
+  }
+
+  mostrarEsconderBusqueda(){
+    this.mostrarBusqueda =!this.mostrarBusqueda;
   }
 }

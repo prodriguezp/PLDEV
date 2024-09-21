@@ -1,19 +1,39 @@
 <div class="parent-proyectos">
-  <h1>PROYECTOS</h1>
-  <input class="inputBusqueda" type="text" (input)="buscarProyectos($event)" />
+  <!-- Header -->
+  <div class="header">
+    <h2 class="title">Proyectos</h2>
+    <p class="subtitle">Aqui podras ver mis proyectos actuales, en los que trabajo y/o trabajaré</p>
+  </div>
+
+
+  <div class="busqueda">
+    <button class="cta-btn" (click)="mostrarEsconderBusqueda()">Buscar 🔍</button>
+    <input class="inputBusqueda" type="text" (input)="buscarProyectos($event)"
+           [className]="! mostrarBusqueda ? 'oculto' : 'inputBusqueda'" placeholder="Escribe aqui..."/>
+
+  </div>
   <div class="proyectos" *ngIf="proyectos.length != 0">
     <div *ngFor="let proyecto of proyectos" class="proyecto">
-      <div class="proyecto-loader">
-        CARGANDO...
+      <div class="title-project">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MS_Project_Logo.png" />
+        <h3>{{ proyecto.titulo }}</h3>
       </div>
-      <div class="proyecto-info">
-        <h3>{{proyecto.titulo}} <span>{{getEmoji(proyecto.estado)}}</span></h3>
-        <img [src]="proyecto.img" width="100%" />
-        <p>{{proyecto.descripcion}}</p>
-      </div>
+      <p>{{ proyecto.descripcion }}</p>
+      <ul>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+      </ul>
+
+      <button class="cta-btn verproyecto">Ver proyecto</button>
+
+      <div class="estado">Finalizado</div>
     </div>
   </div>
   <div class="noProjects" *ngIf="proyectos.length == 0">
-    <h2 >No hay proyectos 🥱</h2>
+    <h2>No hay proyectos 🥱</h2>
   </div>
+
+
 </div>
