@@ -5,7 +5,7 @@ import {NgOptimizedImage} from "@angular/common";
 @Component({
   selector: 'app-Header',
   templateUrl: './Header.component.html',
-  styleUrls: ['./Header.component.css'],
+  styleUrls: ['./Header.component.scss'],
   imports: [
     RouterLink,
     NgOptimizedImage

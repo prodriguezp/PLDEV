@@ -7,7 +7,7 @@ import {FormsModule} from "@angular/forms";
 @Component({
   selector: 'app-ProyectosPage',
   templateUrl: './ProyectosPage.component.html',
-  styleUrls: ['./ProyectosPage.component.css'],
+  styleUrls: ['./ProyectosPage.component.scss'],
   imports: [
     NgForOf,
     FormsModule,

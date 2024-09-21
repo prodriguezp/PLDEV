@@ -6,7 +6,7 @@ import {NgForOf} from "@angular/common";
 @Component({
   selector: 'app-InicioPage',
   templateUrl: './InicioPage.component.html',
-  styleUrls: ['./InicioPage.component.css'],
+  styleUrls: ['./InicioPage.component.scss'],
   imports: [
     NgForOf
   ],
