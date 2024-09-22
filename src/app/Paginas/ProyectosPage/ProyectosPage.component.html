@@ -17,12 +17,12 @@
         <h3>{{ proyecto.titulo }}</h3>
       </div>
       <p>{{ proyecto.descripcion }}</p>
-      <ul>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-        <li>a</li>
-      </ul>
+      <!--<ul>
+        <li *ngFor="let tech of getTechs(proyecto)">{{ tech }}</li>
+      </ul>-->
+      <div class="techs">
+        <span *ngFor="let tech of getTechs(proyecto)"> {{ tech }} </span>
+      </div>
 
       <button class="cta-btn verproyecto">Ver proyecto</button>
 
