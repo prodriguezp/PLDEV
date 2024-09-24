@@ -4,5 +4,6 @@ export interface ProyectoModel {
   descripcion: string;
   img: string;
   estado: string;
-  tecnologias: string;
+  tecnologias: string[];
+  tags: string[];
 }

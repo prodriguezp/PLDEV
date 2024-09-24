@@ -65,8 +65,4 @@ export class ProyectosPageComponent {
   private arraysAreEqual(arr1: any[], arr2: any[]): boolean {
     return JSON.stringify(arr1) === JSON.stringify(arr2);
   }
-
-  getTechs(proyecto: ProyectoModel) {
-    return proyecto.tecnologias.split(";");
-  }
 }

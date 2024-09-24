@@ -200,3 +200,42 @@
 }
 
 
+/* Pantallas pequeñas y móviles */
+@media (max-width: 576px) {
+  /* Estilos para pantallas pequeñas y móviles */
+  .proyecto {
+    width: 70%;
+  }
+}
+
+/* Tablets en modo vertical (pantallas medianas) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Estilos para tablets */
+  .proyecto {
+    width: 70%;
+  }
+}
+
+/* Tablets en modo horizontal o pantallas pequeñas (más grandes que móviles) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Estilos para pantallas medianas */
+  .proyecto {
+    width:40%;
+  }
+}
+
+/* Laptops y pantallas grandes */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Estilos para laptops */
+  .proyecto {
+    width: 40%; /* Ajusta según la necesidad */
+  }
+}
+
+/* Pantallas extra grandes, monitores grandes */
+@media (min-width: 1201px) {
+  /* Estilos para pantallas extra grandes */
+  .proyecto {
+    width: 25%; /* Ajusta según la necesidad */
+  }
+}
