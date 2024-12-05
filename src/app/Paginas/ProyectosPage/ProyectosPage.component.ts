@@ -29,8 +29,7 @@ export class ProyectosPageComponent {
     )
   }
 
-
-  getEmoji(estado: string): String{
+  sgetEmoji(estado: string): String{
     switch (estado) {
       case "FINALIZADO":
         return "✅";
@@ -48,7 +47,7 @@ export class ProyectosPageComponent {
     this._proyectosService.getAllProjectsByName(this.mostrarBusqueda ? inputElement.value : '').subscribe(
       proyectos => {
         console.log("Lista Original: "+JSON.stringify(this.proyectos));
-        console.log("Lista API: "+JSON.stringify(this.proyectos));
+        console.log("Lista API: "+JSON.stringify(proyectos));
         console.log("Son iguales?: "+this.arraysAreEqual(proyectos,this.proyectos));
         if(!this.arraysAreEqual(proyectos, this.proyectos)) {
           this.proyectos = proyectos;
@@ -65,4 +64,6 @@ export class ProyectosPageComponent {
   private arraysAreEqual(arr1: any[], arr2: any[]): boolean {
     return JSON.stringify(arr1) === JSON.stringify(arr2);
   }
+
+
 }

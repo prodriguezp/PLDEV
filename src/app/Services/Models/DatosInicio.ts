@@ -42,6 +42,6 @@ export interface Projects {
 
 export interface Project {
   name: string;
-  description: string;
-  technologies: string[];
+  descripcion: string;
+  tecnologies: string[];
 }

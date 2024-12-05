@@ -160,6 +160,14 @@
   opacity: 0;
 }
 
+.separador{
+  width: 70%;
+  border: 1px solid #5f3711;
+  opacity: 0.1;
+  margin-top: 15px;
+  margin-bottom: 15px ;
+}
+
 /* Animaciones */
 @keyframes fadeIn {
   from {
