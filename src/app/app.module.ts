@@ -21,20 +21,22 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ProyectoCardComponent// Asegúrate de incluir aquí el componente
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes),
-    InicioPageComponent,
-    HeaderComponent,
-    FooterComponent,
-    HttpClientModule
-  ],
-  providers: [
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+    ],
+    imports: [
+        BrowserModule,
+        RouterModule.forRoot(routes),
+        InicioPageComponent,
+        HeaderComponent,
+        FooterComponent,
+        ProyectoCardComponent,
+        HttpClientModule
+    ],
+    providers: [],
+    exports: [
+        ProyectoCardComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

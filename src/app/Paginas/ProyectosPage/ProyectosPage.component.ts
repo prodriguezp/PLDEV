@@ -3,6 +3,8 @@ import {ProyectosService} from "../../Services/Proyectos/proyectos.service";
 import {ProyectoModel} from "../../Services/Models/ProyectoModel";
 import {NgForOf, NgIf} from "@angular/common";
 import {FormsModule} from "@angular/forms";
+import {AppModule} from "../../app.module";
+import {ProyectoCardComponent} from "../../Componentes/proyecto-card/proyecto-card.component";
 
 @Component({
   selector: 'app-ProyectosPage',
@@ -11,7 +13,8 @@ import {FormsModule} from "@angular/forms";
   imports: [
     NgForOf,
     FormsModule,
-    NgIf
+    NgIf,
+    ProyectoCardComponent
   ],
   standalone: true
 })
