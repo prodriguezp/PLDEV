@@ -1,27 +1,6 @@
 .parent-proyectos{
   min-height: 100vh;
 }
-/* Header */
-.header {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f6f6e2;
-  border-bottom: 1px solid #e2d5c1;
-  animation: fadeIn 1s ease-in-out;
-}
-
-.title {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  animation: slideInLeft 1s ease-out;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  color: #d4c098;
-  animation: slideInRight 1s ease-out;
-}
-
 .proyectos {
   display: flex;
   width: 100%;

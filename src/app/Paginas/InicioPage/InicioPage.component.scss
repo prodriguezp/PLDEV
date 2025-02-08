@@ -22,26 +22,6 @@ a {
   margin: 40px 0;
 }
 
-/* Header */
-.header {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f6f6e2;
-  border-bottom: 1px solid #e2d5c1;
-  animation: fadeIn 1s ease-in-out;
-}
-
-.title {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  animation: slideInLeft 1s ease-out;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  color: #d4c098;
-  animation: slideInRight 1s ease-out;
-}
 
 /* Introducción */
 .introduction {
@@ -57,10 +37,9 @@ a {
 /* Habilidades */
 .skills {
   text-align: center;
-  margin-top: 40px;
-  background-color: #f6f6e2;
-  padding: 40px 20px;
   animation: fadeIn 1.5s ease-in-out;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .skills-grid {
@@ -148,6 +127,10 @@ a {
 
 /* Call-to-Action */
 .cta {
+  display: flex;
+  margin: 0 auto;
+  width: 30%;
+  justify-content: space-between;
   text-align: center;
   padding: 50px 20px;
   animation: fadeIn 1.8s ease-in-out;

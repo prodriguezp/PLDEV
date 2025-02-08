@@ -12,11 +12,11 @@ export class DatosInicioService {
   private datos = {
     "home": {
       "header": {
-        "title": "👨🏻‍💻 Desarrollador Fullstack con enfoque en Angular y Spring Boot 👨🏻‍💻",
+        "title": "👨🏻‍💻 Desarrollador Fullstack | Experto en Angular & Spring Boot 👨🏻‍💻",
         "subtitle": "4 años de experiencia en desarrollo web y backend escalable"
       },
       "introduction": {
-        "paragraph": "Soy un desarrollador Fullstack con 4 años de experiencia en el uso de tecnologías como Angular y el ecosistema de Spring para crear soluciones web escalables. Mi enfoque principal es en el backend con Java, incluyendo Spring Boot, JPA, Spring Security y Spring Data, aunque también tengo experiencia en el desarrollo frontend con Angular. Me especializo en la creación de aplicaciones full stack robustas, priorizando la eficiencia y la escalabilidad."
+        "paragraph": "Soy un desarrollador Fullstack con 4 años de experiencia en la creación de soluciones web escalables. Me especializo en el desarrollo backend con Java, utilizando Spring Boot, JPA, Spring Security y Spring Data.Cuento con experiencia completa en proyectos Angular, desde su desarrollo inicial hasta su despliegue en producción, optimizando tanto el rendimiento como la arquitectura."
       },
       "skills": {
         "title": "Habilidades Destacadas",
@@ -25,7 +25,7 @@ export class DatosInicioService {
             "text": "Desarrollo en Angular",
             "class": "fab fa-angular"
           },{
-            "text": "Desarrollo Front/End Spring Boot",
+            "text": "Desarrollo BackEnd Spring Boot",
             "class": "fa fa-leaf"
           },{
             "text": "Base de datos",
