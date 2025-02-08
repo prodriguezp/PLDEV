@@ -15,10 +15,18 @@
     width: 80%;
     border: 1px #5f3711 solid;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     animation: fadeIn 1s ease-in-out;
     position: relative;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
+    min-height: 300px;
+  }
+
+  .info-proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
   }
 
   .proyecto:hover {
@@ -27,54 +35,19 @@
     transform: scale(1.005) translate(2px, 4px);
   }
 
-
-  .cta-btn {
-    width: 250px;
-    height: min-content;
-    background: #5f3711;
-    color: white;
-    text-align: center;
-    border-radius:10px;
-    border: none;
-    transition: all 0.5s;
-    font-size: 1.2rem;
-    padding: 20px;
-    margin-top: 60px;
-  }
-  .cta-btn:focus{
-    outline: none;
-  }
-  .cta-btn.on{
-    border-radius: 0px;
-    background: transparent;
-    border-bottom: 1px solid black;
-    color: #5f3711;
-    width: 500px;
-  }
-
-  .cta-btn.off{
-    color: white;
-    width: 250px;
-  }
-
-  .cta-btn.verproyecto{
-    position: absolute;
-    bottom: -20px;
-    right: 10px;
-    width: 200px;
-    padding: 10px;
-  }
-  .techs{
+  .techs,.tags{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
   }
-  .techs span{
+  .techs span,.tags span{
     background: #d4c098;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.8rem;
   }
+
+
 
   .estado{
     background-color: #5f3711;
@@ -87,11 +60,6 @@
     top: -20px;
     right: 10px;
   }
-  .cta-btn:hover {
-    background-color: #d4c098;
-  }
-
-
   .oculto {
     transition: 1s all;
     width: 0px;
@@ -99,7 +67,7 @@
   }
 
   .separador{
-    width: 70%;
+    width: 100%;
     border: 1px solid #5f3711;
     opacity: 0.1;
     margin-top: 15px;

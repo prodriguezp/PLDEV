@@ -10,6 +10,7 @@ import {HeaderComponent} from "./Componentes/Header/Header.component";
 import {FooterComponent} from "./Componentes/Footer/Footer.component";
 import { ProyectoCardComponent } from './Componentes/proyecto-card/proyecto-card.component';
 import {HttpClientModule} from "@angular/common/http";
+import { BotonesComponent } from './Componentes/botones/botones.component';
 
 const routes: Routes = [
   { path: '', component: InicioPageComponent },
@@ -31,12 +32,14 @@ const routes: Routes = [
         HeaderComponent,
         FooterComponent,
         ProyectoCardComponent,
+        BotonesComponent,
         HttpClientModule
     ],
     providers: [],
-    exports: [
-        ProyectoCardComponent
-    ],
+  exports: [
+    ProyectoCardComponent,
+    BotonesComponent
+  ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

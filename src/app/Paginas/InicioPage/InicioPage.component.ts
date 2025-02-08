@@ -4,6 +4,9 @@ import {HomePage} from "../../Services/Models/DatosInicio";
 import {NgForOf, ViewportScroller} from "@angular/common";
 import {Router} from "@angular/router";
 import {ProyectosPageComponent} from "../ProyectosPage/ProyectosPage.component";
+import {AppModule} from "../../app.module";
+import {TipoButton} from "../../Enums/TipoButton";
+import {BotonesComponent} from "../../Componentes/botones/botones.component";
 
 @Component({
   selector: 'app-InicioPage',
@@ -11,7 +14,8 @@ import {ProyectosPageComponent} from "../ProyectosPage/ProyectosPage.component";
   styleUrls: ['./InicioPage.component.scss'],
   imports: [
     NgForOf,
-    ProyectosPageComponent
+    ProyectosPageComponent,
+    BotonesComponent,
   ],
   standalone: true
 })
@@ -31,9 +35,15 @@ export class InicioPageComponent {
     )
   }
 
-  goTo(url: string){
+  goToProyectos(){
     this.viewportScroller.scrollToPosition([0,0])
-    this.router.navigate([url]);
+    this.router.navigate(['proyectos']);
   }
 
+  goToContacto(){
+    this.viewportScroller.scrollToPosition([0,0])
+    this.router.navigate(['contacto']);
+  }
+
+  protected readonly TipoButton = TipoButton;
 }

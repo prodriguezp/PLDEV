@@ -3,16 +3,20 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/MS_Project_Logo.png" />
     <h3>{{ proyecto.titulo }}</h3>
   </div>
-  <p>{{ proyecto.descripcion }}</p>
-  <div class="techs">
-    <span *ngFor="let tech of proyecto.tecnologias"> {{ tech }} </span>
-  </div>
-  <div class="separador"></div>
-  <div class="techs">
-    <span *ngFor="let tech of proyecto.tags"> {{ tech }} </span>
+  <div class="info-proyecto">
+    <p>{{ proyecto.descripcion }}</p>
+    <div>
+      <div class="techs">
+        <span *ngFor="let tech of proyecto.tecnologias"> {{ tech }} </span>
+      </div>
+      <div class="separador"></div>
+      <div class="tags ">
+        <span *ngFor="let tech of proyecto.tags"> {{ tech }} </span>
+      </div>
+    </div>
   </div>
 
-  <button class="cta-btn verproyecto">Ver proyecto</button>
+  <app-botones [tipoBoton]="TipoButton.VER_PROYECTO"></app-botones>
 
   <div class="estado">Finalizado</div>
 </div>

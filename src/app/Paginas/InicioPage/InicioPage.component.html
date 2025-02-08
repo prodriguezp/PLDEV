@@ -11,7 +11,8 @@
 
 <!-- Call-to-Action -->
 <div class="cta">
-  <a *ngFor="let cta of datosInicio!.home.cta " (click)="goTo(cta.url)" class="cta-btn">{{ cta.text }}</a>
+  <app-botones [tipoBoton]="TipoButton.PROYECTOS" [action]="goToProyectos.bind(this)"></app-botones>
+  <app-botones [tipoBoton]="TipoButton.CONTACTO" [action]="goToContacto.bind(this)"></app-botones>
 </div>
 
 <!-- Habilidades Destacadas -->
