@@ -1,17 +1,6 @@
-section{
-  //border:2px solid #5f3711;
-  width: 40%;
-  margin: 0 auto;
-  margin-top: 60px;
-  padding: 50px;
-  border-radius: 10px;
-  text-align: justify;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
+.sobremi > div{
+  margin-bottom: 70px;
 }
-
 .left{
   animation: sectionFadeInLeft 2s ease-in-out;
 }
@@ -23,31 +12,19 @@ section{
   animation: fadeIn 1.5s ease-in-out;
 
 }
+
 .sobre-mi-img{
   width: 300px;
+  height: 300px;
+  border-radius: 30px;
   border: 1px solid #5f3711;
 }
-
-.sobre-mi-hobbies{
-  display: flex;
-  justify-content: center;
-  gap: 50px
-}
-img{
-  width: 300px;
+.sobre-mi-hobbie{
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
   border: 1px solid #5f3711;
-  box-shadow: #5f3711 5px 4px 14px 0px;
 }
-.separador{
-  width: 70%;
-  height: 0px;
-  margin: 0 auto;
-  border: rgba(95, 55, 17, 0.26) 1px solid;
-}
-
-
-
-
 
 
 
