@@ -31,7 +31,9 @@ body{
   color: #917b4b;
   animation: slideInRight 1s ease-out;
 }
-
+.row{
+  margin: 0px;
+}
 
 /* Animaciones */
 @keyframes fadeIn {
